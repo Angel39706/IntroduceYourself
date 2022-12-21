@@ -60,9 +60,12 @@
                                     <segment title="Third"/>
                                     <segment title="Fourth"/>
                                 </segments>
+                                <connections>
+                                    <action selector="yearSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="uVa-cV-71O"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jo-Um-n5v">
-                                <rect key="frame" x="27" y="612" width="34" height="21"/>
+                                <rect key="frame" x="27" y="612" width="34" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,14 +77,17 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More pets?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx1-cH-YyN">
-                                <rect key="frame" x="27" y="668" width="86" height="21"/>
+                                <rect key="frame" x="27" y="667.33333333333337" width="86" height="21.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHJ-XW-ac9">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YHJ-XW-ac9">
                                 <rect key="frame" x="325" y="663" width="51" height="31"/>
                                 <color key="onTintColor" red="0.20392158630000001" green="0.46274507050000002" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="MorePetsSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="y3i-8L-jDr"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cab-0T-bNu">
                                 <rect key="frame" x="114" y="737" width="163" height="35"/>
@@ -92,7 +98,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orj-NX-9jl">
-                                <rect key="frame" x="102" y="611" width="11" height="21"/>
+                                <rect key="frame" x="102" y="611" width="11" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -159,13 +165,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstNameTexField" destination="kW5-Ty-2cb" id="axY-3Q-b1q"/>
+                        <outlet property="firstNameTextField" destination="kW5-Ty-2cb" id="axY-3Q-b1q"/>
                         <outlet property="introduceYourselfButton" destination="Cab-0T-bNu" id="338-xl-3Dw"/>
                         <outlet property="lastNameTextField" destination="Zfc-dR-TRl" id="nPT-7k-kte"/>
                         <outlet property="morePetsStepper" destination="JJt-3T-4bo" id="nz1-yZ-dfz"/>
                         <outlet property="morePetsSwitch" destination="YHJ-XW-ac9" id="2NY-Yh-30Y"/>
                         <outlet property="numberOfPetsLabel" destination="Orj-NX-9jl" id="0p5-tR-tqk"/>
-                        <outlet property="schoolNameTexField" destination="HJy-gc-A6w" id="g2x-Pi-K21"/>
+                        <outlet property="schoolNameTextField" destination="HJy-gc-A6w" id="g2x-Pi-K21"/>
                         <outlet property="yearSegmentControl" destination="Qea-Qs-xzA" id="JBR-KR-Hrk"/>
                     </connections>
                 </viewController>
